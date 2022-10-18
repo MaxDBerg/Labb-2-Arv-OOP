@@ -7,33 +7,30 @@ namespace Labb_2_Arv_OOP
     internal class Tree : Plants
     {
         public bool _hasLeaves { get; set; }
-        public Tree(int growth = 0)
+        public Tree()
         {
             _growRate = 2;
             _sizeLimit = 20;
-            _growth = growth;
             _name = "Tree";
             _hasLeaves = true;
         }
     }
     internal class Pine : Tree
     {
-        public Pine(int growth = 0)
+        public Pine()
         {
-            _growRate = 2;
-            _sizeLimit = 20;
-            _growth = growth;
+            _growRate = 5;
+            _sizeLimit = 100;
             _name = "Maple";
             _hasLeaves = false;
         }
     }
     internal class Maple : Tree
     {
-        public Maple(int growth = 0)
+        public Maple()
         {
-            _growRate = 2;
-            _sizeLimit = 20;
-            _growth = growth;
+            _growRate = 1;
+            _sizeLimit = 40;
             _name = "Maple";
         }
     }

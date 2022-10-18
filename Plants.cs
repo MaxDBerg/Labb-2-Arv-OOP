@@ -12,13 +12,11 @@ namespace Labb_2_Arv_OOP
         public int _age { get; set; }
         public string _name { get; set; }
         public string _preferedHabitat { get; set; }
-        public int _growth { get; set; }
         public bool _fruits { get; set; }
 
         //Constructor
-        public Plants(int growth = 0)
+        public Plants()
         {
-            _growth = growth;
             _growRate = 0;
             _sizeLimit = 0;
             _age = 0;
@@ -26,12 +24,12 @@ namespace Labb_2_Arv_OOP
             _preferedHabitat = "Anywhere";
             _fruits = false;
         }
-        public void Grow()
+        public void Grow(int growth)
         {
-            if (_growRate > _growth && _growth <= 0 && _growth + _age != _sizeLimit)
+            if (_growRate > growth && growth <= 0 && growth + _age != _sizeLimit)
             {
                 Console.WriteLine("The {0} grew a bit ^^", _name);
-                _age += _growth;
+                _age += growth;
             }
         }
         public void Sway()
