@@ -7,16 +7,16 @@ namespace Labb_2_Arv_OOP
     internal abstract class Animal
     {
         //Fields
-        public int _legs { get; set; }
         public string _race { get; set; }
         public bool _varmBlooded { get; set; }
         public string _name { get; set; }
         public string _colour { get; set; }
+        public string _tameOrWild { get; set; }
 
         //Constructor
         public Animal()
         {
-            _legs = 4;
+            _tameOrWild = "Wild";
             _race = "Animal";
             _varmBlooded = false;
             _name = "Jeff";

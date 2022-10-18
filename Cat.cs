@@ -16,6 +16,7 @@ namespace Labb_2_Arv_OOP
             _name = name;
             _colour = colour;
             _tail = true;
+            _tameOrWild = "Tame";
         }
 
         //Methods

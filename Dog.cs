@@ -40,6 +40,7 @@ namespace Labb_2_Arv_OOP
             _smile = false;
             _nose = false;
             _cute = false;
+            _tameOrWild = "Tame";
         }
         public override void Bite()
         {
@@ -60,6 +61,7 @@ namespace Labb_2_Arv_OOP
             _smile = false;
             _cute = true;
             _fluffy = true;
+            _tameOrWild = "Tame";
         }
         public override void Bite()
         {
