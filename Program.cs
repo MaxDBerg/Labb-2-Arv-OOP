@@ -14,9 +14,9 @@ namespace Labb_2_Arv_OOP
             var bD = new Bulldog("Jeffrey", "White");
             var fLH = new FinnishLapphund("Stella", "Black");
             var h = new Human("Max", "White");
-            var p = new Pine(3);
+            var p = new Pine();
 
-            p.Grow
+            p.Grow(3);
 
             h.Programming();
             c.MakeSound();

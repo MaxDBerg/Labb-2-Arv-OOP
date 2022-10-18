@@ -26,10 +26,11 @@ namespace Labb_2_Arv_OOP
         }
         public void Grow(int growth)
         {
-            if (_growRate > growth && growth <= 0 && growth + _age != _sizeLimit)
+            if (_growRate > growth && growth >= 0 && growth + _age != _sizeLimit)
             {
                 Console.WriteLine("The {0} grew a bit ^^", _name);
                 _age += growth;
+                Console.WriteLine("The {0} is {1} meters tall", _name, _age);
             }
         }
         public void Sway()
