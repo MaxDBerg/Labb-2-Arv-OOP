@@ -32,7 +32,10 @@ namespace Labb_2_Arv_OOP
     }
     internal class Bulldog : Dog
     {
+        //Fields
         public bool _nose { get; set; }
+
+        //Constructor
         public Bulldog(string name, string colour)
         {
             _name = name;
@@ -42,6 +45,8 @@ namespace Labb_2_Arv_OOP
             _cute = false;
             _tameOrWild = "Tame";
         }
+
+        //Methods
         public override void Bite()
         {
             Console.WriteLine("{0} can't bite!?", _name);
@@ -53,7 +58,10 @@ namespace Labb_2_Arv_OOP
     }
     internal class FinnishLapphund : Dog
     {
+        //Fields
         public bool _fluffy { get; set; }
+
+        //Constructor
         public FinnishLapphund(string name, string colour)
         {
             _name = name;
@@ -63,6 +71,8 @@ namespace Labb_2_Arv_OOP
             _fluffy = true;
             _tameOrWild = "Tame";
         }
+        
+        //Methods
         public override void Bite()
         {
             Console.WriteLine("{0} Doesn't bite :)", _name);
