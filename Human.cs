@@ -7,7 +7,7 @@ namespace Labb_2_Arv_OOP
     internal class Human : Mammal
     {
         //Constructor
-        public Human(string name, string colour)
+        public Human(string name = "", string colour = "")
         {
             _race = "Human";
             _name = name;

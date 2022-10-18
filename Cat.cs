@@ -10,7 +10,7 @@ namespace Labb_2_Arv_OOP
         public bool _tail { get; set; }
 
         //Constructor
-        public Cat(string name, string colour)
+        public Cat(string name = "", string colour = "")
         {
             _race = "Cat";
             _name = name;

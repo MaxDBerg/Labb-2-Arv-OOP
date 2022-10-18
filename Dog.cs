@@ -11,7 +11,7 @@ namespace Labb_2_Arv_OOP
         public bool _cute { get; set; }
 
         //Constructor
-        public Dog()
+        public Dog(string name = "", string colour = "")
         {
             _race = "Dog";
             _name = "Leff";
@@ -36,7 +36,7 @@ namespace Labb_2_Arv_OOP
         public bool _nose { get; set; }
 
         //Constructor
-        public Bulldog(string name, string colour)
+        public Bulldog(string name = "", string colour = "")
         {
             _name = name;
             _colour = colour;
@@ -62,7 +62,7 @@ namespace Labb_2_Arv_OOP
         public bool _fluffy { get; set; }
 
         //Constructor
-        public FinnishLapphund(string name, string colour)
+        public FinnishLapphund(string name = "", string colour = "")
         {
             _name = name;
             _colour = colour;
