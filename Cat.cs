@@ -10,10 +10,11 @@ namespace Labb_2_Arv_OOP
         public bool _tail { get; set; }
 
         //Constructor
-        public Cat()
+        public Cat(string name, string colour)
         {
-            _name = "cat";
-            _colour = "brown";
+            _race = "Cat";
+            _name = name;
+            _colour = colour;
             _tail = true;
         }
 
