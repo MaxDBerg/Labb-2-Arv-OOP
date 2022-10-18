@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Labb_2_Arv_OOP
+{
+    internal class Cat : Mammal
+    {
+        //Fields
+        public bool _tail { get; set; }
+
+        //Constructor
+        public Cat()
+        {
+            _name = "cat";
+            _colour = "brown";
+            _tail = true;
+        }
+
+        //Methods
+        public override void MakeSound()
+        {
+            Console.WriteLine("meow... meow... meow...");
+        }
+        public void Attack()
+        {
+            Console.WriteLine("Cat Attacks!");
+        }
+    }
+
+}
